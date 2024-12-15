@@ -14,7 +14,7 @@ class FilamentRefreshTableServiceProvider extends PackageServiceProvider
     {
         $package->name(static::$name)
             ->hasViews('filament-refresh-table')
-            ->hasInstallCommand(function(InstallCommand $command) {
+            ->hasInstallCommand(function (InstallCommand $command) {
                 $command
                     ->askToStarRepoOnGitHub('faizananwerali/filament-refresh-table');
             });

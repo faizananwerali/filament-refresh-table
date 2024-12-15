@@ -12,8 +12,8 @@ trait HasRefreshableTable
     public function initializeHasRefreshableTable(): void
     {
         $this->listeners = $this->listeners + [
-                'onTableRefresh' => '$refresh',
-            ];
+            'onTableRefresh' => '$refresh',
+        ];
     }
 
     public function bootedHasRefreshableTable(): void

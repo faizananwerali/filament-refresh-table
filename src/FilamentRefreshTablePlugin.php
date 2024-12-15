@@ -2,9 +2,9 @@
 
 namespace FaizanAnwerAli\FilamentRefreshTable;
 
+use FaizanAnwerAli\FilamentRefreshTable\Concerns\ConfigurePlugin;
 use Filament\Contracts\Plugin;
 use Filament\Panel;
-use FaizanAnwerAli\FilamentRefreshTable\Concerns\ConfigurePlugin;
 use Filament\Support\Facades\FilamentView;
 use Illuminate\Contracts\View\View;
 
@@ -23,7 +23,7 @@ class FilamentRefreshTablePlugin implements Plugin
         if ($this->isEnabled()) {
             FilamentView::registerRenderHook(
                 $this->getPosition(),
-                fn(): View => view('filament-refresh-table::components.refresh-button', [
+                fn (): View => view('filament-refresh-table::components.refresh-button', [
                     'color' => $this->getColor(),
                     'icon' => $this->getIcon(),
                     'label' => $this->getLabel(),
@@ -33,9 +33,7 @@ class FilamentRefreshTablePlugin implements Plugin
         }
     }
 
-    public function boot(Panel $panel): void
-    {
-    }
+    public function boot(Panel $panel): void {}
 
     public static function make(): static
     {

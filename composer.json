@@ -2,6 +2,7 @@
     "name": "faizananwerali/filament-refresh-table",
     "description": "A Filament plugin that adds refresh functionality to tables",
     "type": "library",
+    "version": "1.0.01",
     "keywords": ["laravel", "framework", "filamentphp", "filament"],
     "require": {
         "php": "^8.1",
@@ -26,5 +27,7 @@
                 "FaizanAnwerAli\\FilamentRefreshTable\\FilamentRefreshTableServiceProvider"
             ]
         }
-    }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }

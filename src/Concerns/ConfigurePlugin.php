@@ -26,36 +26,42 @@ trait ConfigurePlugin
     public function icon(string|Closure $icon): static
     {
         $this->icon = $icon;
+
         return $this;
     }
 
     public function color(string|Closure $color): static
     {
         $this->color = $color;
+
         return $this;
     }
 
     public function label(string|Closure $label): static
     {
         $this->label = $label;
+
         return $this;
     }
 
     public function position(string|Closure $position): static
     {
         $this->position = $position;
+
         return $this;
     }
 
     public function showLabel(bool|Closure $condition = true): static
     {
         $this->showLabel = $condition;
+
         return $this;
     }
 
     public function enabled(bool|Closure $condition = true): static
     {
         $this->isEnabled = $condition;
+
         return $this;
     }
 
@@ -92,6 +98,7 @@ trait ConfigurePlugin
     public function tooltip(string|Closure|null $tooltip): static
     {
         $this->tooltip = $tooltip;
+
         return $this;
     }
 
