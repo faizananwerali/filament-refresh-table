@@ -27,7 +27,5 @@
                 "FaizanAnwerAli\\FilamentRefreshTable\\FilamentRefreshTableServiceProvider"
             ]
         }
-    },
-    "minimum-stability": "dev",
-    "prefer-stable": true
+    }
 }
