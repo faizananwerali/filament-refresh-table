@@ -1,4 +1,3 @@
-{{-- vendor/faizananwerali/filament-refresh-table/resources/views/components/refresh-button.blade.php --}}
 <div>
     <x-filament::icon-button
             :icon="$icon"
